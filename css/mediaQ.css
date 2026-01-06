@@ -1,0 +1,520 @@
+/* ---------- Media ---------- */
+
+/* Extra small devices [phons, 600px and down...] */
+
+@media only screen and (max-width: 600px) {
+  main::before {
+    content: url(../img/BG-Imgs/bg-header-desktop.png);
+  }
+  .marquee-container {
+    margin-top: 40px;
+  }
+  header > ul {
+    display: none;
+  }
+  main .c-shap {
+    height: 600px;
+    width: 600px;
+    top: -400px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  main {
+    height: 1200px;
+    flex-direction: column;
+  }
+  main img:not(.texts img) {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+  }
+  main .texts {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  main .texts p {
+    margin-bottom: 50px;
+  }
+  main .icons {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  main .btns {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .se2 {
+    margin-bottom: 1400px;
+  }
+  .se2 .cards {
+    grid-template-rows: 470px 470px 470px 470px;
+    width: 50%;
+  }
+  .se2 .cards .card .imgs img:nth-of-type(1) {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-bottom: 2px solid #2878e7;
+  }
+  .se2 .cards .card .text {
+    height: 80%;
+  }
+  .se2 .cards .card {
+    flex-direction: column;
+  }
+  .se3 .cards .card {
+    width: 50%;
+  }
+  .se3 .cards .card h2 {
+    font-size: 30px;
+  }
+  .se3 h2 {
+    line-height: 40px;
+  }
+  .se3 img {
+    margin-bottom: -10px;
+  }
+  .se4 {
+    flex-direction: column;
+    text-align: center;
+    height: 3100px;
+  }
+  .se4 .text {
+    width: 100%;
+    margin-bottom: 200px;
+  }
+  .se4 .skills-card {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    gap: 250px;
+  }
+  .se4 .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .se4 .skill img {
+    width: 100px;
+  }
+  .se4 .skill h2 {
+    font-size: 60px;
+  }
+  .se4 .skill .wow {
+    padding: 30px;
+  }
+  .se4 .skill .wow::before {
+    left: -20px;
+    bottom: -20px;
+  }
+  .se5 {
+    width: 70%;
+    height: 350px;
+  }
+  .se5 .icons {
+    margin-top: -10px;
+  }
+  .se5 img[src="img/Ahmed.png"] {
+    display: none;
+  }
+  footer {
+    height: fit-content;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+  }
+  footer .se2-f ul img[src="img/ic_call_black_48dp.png"] {
+    left: 10px;
+  }
+}
+
+/* Small devices [small tablets and larg phons, 600px and up...] */
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  main::before {
+    content: url(../img/BG-Imgs/bg-header-desktop.png);
+  }
+  .marquee-container {
+    margin-top: 40px;
+  }
+  header > ul {
+    display: none;
+  }
+  main .c-shap {
+    height: 600px;
+    width: 600px;
+    top: -400px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  main {
+    height: 1200px;
+    flex-direction: column;
+  }
+  main img:not(.texts img) {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+  }
+  main .texts {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  main .texts p {
+    margin-bottom: 50px;
+  }
+  main .icons {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  main .btns {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .se2 {
+    margin-bottom: 1400px;
+  }
+  .se2 .cards {
+    grid-template-rows: 470px 470px 470px 470px;
+    width: 50%;
+  }
+  .se2 .cards .card .imgs img:nth-of-type(1) {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-bottom: 2px solid #2878e7;
+  }
+  .se2 .cards .card .text {
+    height: 80%;
+  }
+  .se2 .cards .card {
+    flex-direction: column;
+  }
+  .se3 .cards .card {
+    width: 50%;
+  }
+  .se3 .cards .card h2 {
+    font-size: 35px;
+  }
+  .se3 h2 {
+    line-height: 40px;
+  }
+  .se3 img {
+    margin-bottom: -10px;
+  }
+  .se4 {
+    flex-direction: column;
+    text-align: center;
+    height: 3100px;
+  }
+  .se4 .text {
+    width: 100%;
+    margin-bottom: 200px;
+  }
+  .se4 .skills-card {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    gap: 250px;
+  }
+  .se4 .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .se4 .skill img {
+    width: 150px;
+  }
+  .se4 .skill h2 {
+    font-size: 60px;
+  }
+  .se4 .skill .wow {
+    padding: 30px;
+  }
+  .se4 .skill .wow::before {
+    left: -20px;
+    bottom: -20px;
+  }
+  .se5 {
+    width: 60%;
+    height: 350px;
+  }
+  .se5 .icons {
+    margin-top: -10px;
+  }
+  .se5 img[src="img/Ahmed.png"] {
+    display: none;
+  }
+  footer {
+    height: fit-content;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+  }
+  footer .se2-f ul img[src="img/ic_call_black_48dp.png"] {
+    left: 10px;
+  }
+}
+
+/* Medium devices [landscap tablets] */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .marquee-container {
+    margin-top: 40px;
+  }
+  header > ul {
+    display: none;
+  }
+  main .c-shap {
+    top: -400px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  main {
+    height: 1200px;
+    flex-direction: column;
+  }
+  main img:not(.texts img) {
+    margin: 0 auto;
+  }
+  main .texts {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  main .texts p {
+    margin-bottom: 50px;
+  }
+  main .icons {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  main .btns {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .se2 {
+    margin-bottom: 1400px;
+  }
+  .se2 .cards {
+    grid-template-rows: 470px 470px 470px 470px;
+    width: 50%;
+  }
+  .se2 .cards .card .imgs img:nth-of-type(1) {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-bottom: 2px solid #2878e7;
+  }
+  .se2 .cards .card .text {
+    height: 80%;
+  }
+  .se2 .cards .card {
+    flex-direction: column;
+  }
+  .se3 .cards .card {
+    width: 50%;
+  }
+  .se3 .cards .card h2 {
+    font-size: 35px;
+  }
+  .se4 {
+    flex-direction: column;
+    text-align: center;
+    height: 3300px;
+  }
+  .se4 .text {
+    width: 100%;
+    margin-bottom: 200px;
+  }
+  .se4 .skills-card {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    gap: 250px;
+  }
+  .se4 .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .se4 .skill img {
+    width: 150px;
+  }
+  .se4 .skill h2 {
+    font-size: 60px;
+  }
+  .se4 .skill .wow {
+    padding: 30px;
+  }
+  .se4 .skill .wow::before {
+    left: -20px;
+    bottom: -20px;
+  }
+  .se5 {
+    width: 60%;
+    height: 350px;
+  }
+  .se5 .icons {
+    margin-top: 10px;
+  }
+  .se5 img[src="img/Ahmed.png"] {
+    display: none;
+  }
+  footer {
+    height: fit-content;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+  }
+  footer .se2-f ul img[src="img/ic_call_black_48dp.png"] {
+    left: 10px;
+  }
+}
+
+/* Larg devices [laptops/desktops] */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .marquee-container {
+    margin-top: 40px;
+  }
+  header > ul {
+    display: none;
+  }
+  main .c-shap {
+    top: -400px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  main {
+    height: 1200px;
+    flex-direction: column;
+  }
+  main img:not(.texts img) {
+    margin: 0 auto;
+  }
+  main .texts {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  main .texts p {
+    margin-bottom: 50px;
+  }
+  main .icons {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  main .btns {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .se2 {
+    margin-bottom: 1400px;
+  }
+  .se2 .cards {
+    grid-template-rows: 470px 470px 470px 470px;
+  }
+  .se2 .cards .card .imgs img:nth-of-type(1) {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-bottom: 2px solid #2878e7;
+  }
+  .se2 .cards .card .text {
+    height: 80%;
+  }
+  .se2 .cards .card {
+    flex-direction: column;
+  }
+  .se4 {
+    flex-direction: column;
+    text-align: center;
+    height: 3100px;
+  }
+  .se4 .text {
+    width: 100%;
+    margin-bottom: 200px;
+  }
+  .se4 .skills-card {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    gap: 250px;
+  }
+  .se4 .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .se4 .skill img {
+    width: 150px;
+  }
+  .se4 .skill h2 {
+    font-size: 60px;
+  }
+  .se4 .skill .wow {
+    padding: 30px;
+  }
+  .se4 .skill .wow::before {
+    left: -20px;
+    bottom: -20px;
+  }
+  .se5 p {
+    margin-bottom: 50px;
+  }
+  .se5 {
+    height: 350px;
+  }
+  footer {
+    height: fit-content;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Extra larg devices [Larg laptops/desktops, 1200px and up...] */
+
+@media only screen and (min-width: 1200px) {
+  main {
+    height: 800px;
+  }
+  .menu-container {
+    display: none;
+  }
+  .marquee-container {
+    display: block;
+  }
+  .se4 .skill {
+    width: 300px;
+    height: 200px;
+  }
+  .se4 {
+    height: 1000px;
+  }
+  .se4 .text {
+    width: 500px;
+  }
+  header > ul {
+    display: block;
+  }
+}
