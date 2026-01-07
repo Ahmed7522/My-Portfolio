@@ -15,6 +15,71 @@ body {
   font-family: monospace;
 }
 
+:root {
+  --mainBgColor: #2878e7;
+  --mainTextColor: gray;
+}
+
+/* ========== Theme Variables (عدّل الألوان هنا) ========== */
+:root {
+  --color-bg: #ffffff;
+  --color-text: #0f0f0f;
+}
+
+.dark {
+  --color-bg: #0d0d0d;
+  --color-text: #f3f3f3;
+}
+
+/* تطبيق الألوان العامة على الموقع */
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  transition: background .35s ease, color .35s ease;
+}
+
+/* ========== زر التبديل ========== */
+.theme-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text); /* 🔧 لو عايز تغيّر لون الأيقونة */
+  display: grid;
+  place-items: center;
+  padding: 6px;
+}
+
+/* حركة رقيقة للأيقونة */
+.theme-toggle:hover {
+  background-color: #247fffb5;
+  transition: all 0.3s;
+}
+
+.theme-toggle {
+  transition: all 0.3s;
+  padding: 10px;
+  border-radius: 50%;
+  margin-left: -70px;
+}
+
+.theme-toggle svg {
+  transition:
+    transform .45s cubic-bezier(.25,.1,.25,1),
+    color .3s ease;
+}
+
+/* 🌙 تأثير إضافي في الوضع الداكن */
+.dark .theme-toggle svg {
+  transform: rotate(-18deg) scale(0.96);
+}
+
+/* ✨ دعم “تقليل الحركة” لذوي الحساسية البصرية */
+@media (prefers-reduced-motion: reduce) {
+  .theme-toggle svg {
+    transition: none;
+  }
+}
+
 ::-webkit-scrollbar {
   background-color: #f1f1f1;
 }
@@ -130,6 +195,7 @@ marquee span {
 .menu {
   width: 50px;
   height: 5px;
+  border-radius: 8px;
   position: relative;
   background-color: black;
   transition: all 0.5s;
@@ -148,6 +214,8 @@ marquee span {
   position: absolute;
   width: 50px;
   height: 5px;
+  border-radius: 8px;
+
   background-color: black;
 }
 
@@ -366,8 +434,6 @@ main .icons img:hover,
   text-align: left;
 }
 
-
-
 .se2 .card h2,
 .se2 .card p {
   color: black;
@@ -390,6 +456,7 @@ main .icons img:hover,
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  text-decoration-line: none;
 }
 
 .se2 .cards .card .imgs img:nth-of-type(1) {
@@ -489,10 +556,6 @@ main .icons img:hover,
 
 .se3 .cards .card img {
   width: 144px;
-}
-
-.se3 .cards:has(.card:hover) .card:not(:hover) {
-  filter: blur(1px);
 }
 
 .se3 .card:hover {
