@@ -20,66 +20,6 @@ body {
   --mainTextColor: gray;
 }
 
-/* ========== Theme Variables (عدّل الألوان هنا) ========== */
-:root {
-  --color-bg: #ffffff;
-  --color-text: #0f0f0f;
-}
-
-.dark {
-  --color-bg: #0d0d0d;
-  --color-text: #f3f3f3;
-}
-
-/* تطبيق الألوان العامة على الموقع */
-body {
-  background: var(--color-bg);
-  color: var(--color-text);
-  transition: background .35s ease, color .35s ease;
-}
-
-/* ========== زر التبديل ========== */
-.theme-toggle {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  color: var(--color-text); /* 🔧 لو عايز تغيّر لون الأيقونة */
-  display: grid;
-  place-items: center;
-  padding: 6px;
-}
-
-/* حركة رقيقة للأيقونة */
-.theme-toggle:hover {
-  background-color: #247fffb5;
-  transition: all 0.3s;
-}
-
-.theme-toggle {
-  transition: all 0.3s;
-  padding: 10px;
-  border-radius: 50%;
-  margin-left: -70px;
-}
-
-.theme-toggle svg {
-  transition:
-    transform .45s cubic-bezier(.25,.1,.25,1),
-    color .3s ease;
-}
-
-/* 🌙 تأثير إضافي في الوضع الداكن */
-.dark .theme-toggle svg {
-  transform: rotate(-18deg) scale(0.96);
-}
-
-/* ✨ دعم “تقليل الحركة” لذوي الحساسية البصرية */
-@media (prefers-reduced-motion: reduce) {
-  .theme-toggle svg {
-    transition: none;
-  }
-}
-
 ::-webkit-scrollbar {
   background-color: #f1f1f1;
 }
@@ -558,12 +498,6 @@ main .icons img:hover,
   width: 144px;
 }
 
-.se3 .card:hover {
-  transition: all 0.3s ease;
-  transform: translateY(-20px);
-  box-shadow: -20px 20px 15px #2878e79f;
-}
-
 /* ===== Section 3 End ===== */
 
 /* ===== Section 4 Start ===== */
@@ -574,40 +508,54 @@ main .icons img:hover,
   background-image: url(../img/BG-Imgs/common-bg.svg);
   background-size: cover;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   padding: 30px 40px;
   width: 100%;
-  height: 950px;
 }
 
-.se4 .text {
-  width: 1700px;
-  margin-right: 30px;
+.se4 .head-of-skills {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.se4 .head-of-skills p {
+  width: 70%;
 }
 
 .se4 .skills-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 30px;
+  gap: 20rem;
 }
 
 .se4 .skill img {
-  width: 60px;
+  width: 80px;
   position: relative;
 }
 
 .se4 .skill {
   width: 300px;
   height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .se4 .skill h2 {
   font-size: 40px;
+  height: fit-content;
+  width: fit-content;
 }
 
 .se4 .skill p {
   margin-top: -30px;
+  text-align: center;
 }
 
 .se4 .skill .wow {
@@ -641,7 +589,7 @@ main .icons img:hover,
 
 .se5 {
   width: 70%;
-  height: 310px;
+  height: 20rem;
   background-image: url(../img/BG-Imgs/Cards-BG.png);
   border-radius: 40px;
   flex-direction: column;
@@ -718,8 +666,9 @@ footer {
   box-shadow: 0px 0px 20px #2878e7;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   padding: 20px 35px;
-  gap: 215px;
+  /* gap: 215px; */
 }
 
 footer .preview {

@@ -1,8 +1,166 @@
 /* ---------- Media ---------- */
 
+/* Extra Extra small devices [phons, 400px and down...] */
+
+@media only screen and (max-width: 479px) {
+  main::before {
+    content: url(../img/BG-Imgs/bg-header-desktop.png);
+  }
+  .marquee-container {
+    margin-top: 40px;
+  }
+  header > ul {
+    display: none;
+  }
+  main .c-shap {
+    height: 350px;
+    width: 350px;
+    top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  main {
+    height: 1200px;
+    flex-direction: column;
+  }
+  main img:not(.texts img) {
+    margin: -30px auto 20px;
+    width: 250px;
+    height: 250px;
+  }
+  main .texts {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  main .texts p {
+    margin-bottom: 50px;
+  }
+  main .texts h1 {
+    font-size: 35px;
+    line-height: 55px;
+  }
+  main .icons {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  main .btns {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .se2 {
+    margin-bottom: 1400px;
+  }
+  .se2 .cards {
+    grid-template-rows: 470px 470px 470px 470px;
+    width: 70%;
+  }
+  .se2 .cards .card .imgs img:nth-of-type(1) {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-bottom: 2px solid #2878e7;
+  }
+  .se2 .cards .card .text {
+    height: 80%;
+  }
+  .se2 .cards .card {
+    flex-direction: column;
+  }
+  .se3 .cards .card {
+    width: 70%;
+  }
+  .se3 .cards .card h2 {
+    font-size: 30px;
+  }
+  .se3 h2 {
+    line-height: 40px;
+  }
+  .se3 img {
+    margin-bottom: -10px;
+  }
+  .se4 {
+    flex-direction: column;
+    text-align: center;
+    height: 3400px;
+  }
+  .se4 .text {
+    width: 100%;
+    margin-bottom: 200px;
+  }
+  .se4 .skills-card {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    gap: 250px;
+  }
+  .se4 .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .se4 .head-of-skills h1 {
+    font-size: 40px;
+  }
+  .se4 .head-of-skills p {
+    width: 100%;
+  }
+  .se4 .skill img {
+    width: 100px;
+  }
+  .se4 .skill h2 {
+    font-size: 60px;
+  }
+  .se4 .skill .wow {
+    padding: 30px;
+  }
+  .se4 .skill .wow::before {
+    left: -20px;
+    bottom: -20px;
+  }
+  .se5 h2 {
+    display: none;
+  }
+  .se5 .me {
+    transform: translateX(50%);
+    right: 50%;
+  }
+  .se5 p {
+    margin-top: 80px;
+    align-items: center;
+    width: 100%;
+    margin-left: 30px;
+  }
+  .se5 {
+    width: 80%;
+    height: 25rem;
+    padding-left: 10px;
+  }
+  .se5 .icons {
+    margin-top: -10px;
+    margin-right: 100px;
+  }
+  .se5 img[src="img/Ahmed.png"] {
+    display: none;
+  }
+  footer {
+    height: fit-content;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+  }
+  footer .se2-f ul img[src="img/ic_call_black_48dp.png"] {
+    left: 10px;
+  }
+}
+
 /* Extra small devices [phons, 600px and down...] */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 480px) and (max-width: 600px) {
   main::before {
     content: url(../img/BG-Imgs/bg-header-desktop.png);
   }
@@ -111,9 +269,18 @@
     left: -20px;
     bottom: -20px;
   }
+  .se4 .head-of-skills p {
+    width: 100%;
+  }
+  .se5 h2 {
+    font-size: 40px;
+  }
+  .se5 p {
+    margin-top: 20px;
+  }
   .se5 {
     width: 70%;
-    height: 350px;
+    height: 25rem;
   }
   .se5 .icons {
     margin-top: -10px;
@@ -121,6 +288,7 @@
   .se5 img[src="img/Ahmed.png"] {
     display: none;
   }
+
   footer {
     height: fit-content;
     flex-direction: column;
@@ -246,10 +414,7 @@
   }
   .se5 {
     width: 60%;
-    height: 350px;
-  }
-  .se5 .icons {
-    margin-top: -10px;
+    height: 21rem;
   }
   .se5 img[src="img/Ahmed.png"] {
     display: none;
@@ -351,6 +516,9 @@
     flex-direction: column;
     align-items: center;
   }
+  .se4 .head-of-skills {
+    width: 100%;
+  }
   .se4 .skill img {
     width: 150px;
   }
@@ -366,7 +534,7 @@
   }
   .se5 {
     width: 60%;
-    height: 350px;
+    /* height: 350px; */
   }
   .se5 .icons {
     margin-top: 10px;
@@ -447,7 +615,7 @@
   .se4 {
     flex-direction: column;
     text-align: center;
-    height: 3100px;
+    height: 3600px;
   }
   .se4 .text {
     width: 100%;
@@ -457,7 +625,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     justify-items: center;
-    gap: 250px;
+    gap: 400px;
   }
   .se4 .skill {
     display: flex;
@@ -481,12 +649,12 @@
     margin-bottom: 50px;
   }
   .se5 {
-    height: 350px;
+    /* height: 350px; */
   }
   footer {
     height: fit-content;
-    flex-direction: column;
-    gap: 50px;
+    flex-direction: row;
+    gap: 80px;
     align-items: center;
     text-align: center;
   }
@@ -509,7 +677,7 @@
     height: 200px;
   }
   .se4 {
-    height: 1000px;
+    height: 1700px;
   }
   .se4 .text {
     width: 500px;
